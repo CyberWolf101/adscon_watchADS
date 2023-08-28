@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Lobster&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Orbitron&family=Rye&family=Tilt+Prism&display=swap');
+
+:root {
+    --primary: #1083ef;
+    --primary: #3182CE;
+    --primaryBg: #3b7cba;
+
+    /* --secondary: #20283f; */
+    --secondary: #05102df4;
+}
+
+/* ______CHAT_______ */
+.chat-con {
+    position: absolute;
+    bottom: 2px;
+    right:  4px;
+    border: 3px solid var(--primaryBg);
+    padding: 3px;
+    display: none;
+
+}
+
+.chat{
+    color: var(--primaryBg);
+
+}
+
+
+/* -----------------------BODY---------------------- */
+.TILT {
+    font-family: Tilt Prism;
+    font-weight: 600;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.app {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: Poppins, Arial;
+}
+
+.shadow {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+}
+
+
+.app {
+    /* background-color: var(--secondary); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.app::-webkit-scrollbar {
+    display: none;
+}
+
+.err {
+    border: 1px solid rgba(220, 20, 60, 0.591);
+    padding: 5px;
+    color: rgba(220, 20, 60, 0.646);
+    border-radius: 4px;
+}
+
+
+
+
+
+
+/* -----------------------------NAV ------------------------------- */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(112, 128, 144, 0.272);
+}
+
+.offNav {
+    background-color: white;
+    color: var(--primary);
+}
+
+.nav-contents div {
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: auto;
+}
+
+.faint {
+    color: slategray;
+}
+
+
+
+
+
+/* _____________________INTRO_________________ */
+.myBtn {
+    background-color: var(--primary);
+    color: white;
+    width: 190px;
+}
+
+.myBtn:hover {
+    /* background-color: ; */
+    color: white;
+    background-color: #1e3c72;
+}
+
+.intro-img {
+    width: 80%;
+    float: right;
+    position: relative;
+
+}
+
+.intro-img img {
+    border-radius: 10px;
+}
+
+.intro-img-div {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 30px;
+
+
+}
+
+.absolute-contents-div {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.absolute-contents {
+    background-color: rgba(255, 255, 255, 0.386);
+    backdrop-filter: blur(4px);
+    margin: 3px 0px;
+    padding: 6px;
+    width: 70%;
+    border-radius: 4px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.doings {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+}
+
+.doings-det {
+    font-size: 9px;
+}
+
+
+
+
+/* _______________FEATURE__________ */
+.features {
+    margin-top: 480px;
+
+}
+
+.features h3 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.features-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 4px;
+    /* border-bottom: 1px solid slategray; */
+
+}
+.features-contents p{
+    font-size: 14px;
+}
+
+.feat-icons {
+    color: var(--primary);
+    font-size: 43px;
+}
+
+.divider {
+    height: 1px;
+    width: 300px;
+    background-color: slategrey;
+    margin-bottom: 4px;
+}
+
+.earn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.earn-grid h6 {
+    font-size: 13px;
+}
+
+.earn-grid .stats-con {
+    box-shadow: 2px 3px 4px;
+    padding: 4px 0px;
+    height: 160px;
+}
+
+
+/* ____________details/stats___________ */
+
+.stats-con {
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    color: var(--primary);
+
+}
+
+.stat-icon {
+    color: var(--primary);
+}
+
+/* ___________ABOUT________ */
+.about {
+    background-image: url(../assets/Hero_edited.jpg);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 9px;
+}
+
+.about-cover {
+    background-color: rgba(255, 255, 255, 0.532);
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px 2px;
+    backdrop-filter: blur(4px);
+
+}
+
+/* ___________BLOG_________ */
+.blog-overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(rgba(68, 66, 90, 0), #44425a);
+    z-index: 1;
+}
+
+
+
+/* _______FOOTER________ */
+.footer h4 {
+    color: var(--primary);
+}
+
+.footer {
+    background-color: rgba(112, 128, 144, 0.057);
+}
+
+
+/* ______________DASHBOARD____________ */
+.person {
+    font-size: 18px;
+}
+.verified{
+    color: var(--primary);
+    
+}
+.not-verified{
+    color: rgba(112, 128, 144, 0.712);
+}
+.dashboard-title button {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.dashboard-title {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* text-align: right; */
+    background-color: var(--primary);
+    padding: 7px 0px;
+    color: white;
+
+}
+
+.earnings {
+    text-align: right;
+    margin-top: 3px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.earnings span {
+    background-color: rgba(255, 255, 255, 0.737);
+    background-color: white;
+    padding: 11px;
+    color: black;
+    color: var(--primaryBg);
+    border-radius: 4px;
+}
+
+
+.withdrawable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 11px;
+}
+
+.withdrawable h4 {
+    font-weight: bold;
+}
+
+.categories {
+    border: 1px solid rgba(112, 128, 144, 0.539);
+    background-color: var(--primaryBg);
+    border-radius: 6px;
+}
+
+.icon-con {
+    font-size: 43px;
+}
+
+.button_input {
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    background-color: rgb(240, 243, 246);
+}
+
+.direction {
+    /* border: 10px solid var(--primaryBg); */
+    padding: 14px;
+    border-radius: 4px;
+}
+
+.direction div:nth-child(1) div {
+    color: var(--primary);
+    font-weight: 600;
+
+}
+
+
+
+/* __________________deposit_____________ */
+
+.account-details {
+    padding: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+
+/* __________ENROLL____________ */
+.how {
+    background-color: #1083ef1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* ___________withdrawables________ */
+
+.withdrawables label {
+    margin-left: 2px;
+    font-weight: 600;
+}
+
+
+/* __________profile_________ */
+
+.user-details label {
+    margin-top: 19px;
+    margin-left: 2px;
+    font-weight: 600;
+}
+
+.statistics {
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    width: 100%;
+    padding: 5px;
+    color: white;
+    /* font-weight: 600; */
+    /* font-size: larger; */
+    border-radius: 6px;
+    margin-top: 8px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase; */
+}
+
+.cashout {
+    color: white;
+    font-size: 14px;
+    background: #2b5876;
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    width: 80%;
+    margin-top: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* _____________ADS___________ */
+.video-actions {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.video-actions button {
+    backdrop-filter: blur(4px);
+    padding: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.208);
+    opacity: 0.5;
+}
+
+.watch {
+    background: #9CECFB;
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    width: 90%;
+    padding: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 6px;
+    margin-left: 6px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.read {
+    background: #F3904F;
+    background: -webkit-linear-gradient(to right, #3B4371, #F3904F);
+    background: linear-gradient(to right, #3B4371, #F3904F);
+    width: 90%;
+    padding: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 6px;
+    margin-left: 6px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.read-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.getting {
+    font-size: 19px;
+    color: rgba(112, 128, 144, 0.596);
+}
+
+.become {
+    background: #3a6186;
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+    background: linear-gradient(to right, #89253e, #3a6186);
+    width: 90%;
+    padding: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 6px;
+    margin-left: 6px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+
+/* ___________LOGIN PAGE_________ */
+
+.login-page {
+    height: 100vh;
+
+    background: #E0EAFC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: white;
+}
+
+.login-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-details {
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 90%;
+
+}
+
+.login-details input {
+    padding: 16px;
+    border: 1px solid white;
+}
+
+.login-details input:focus {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.login-details small {
+    color: rgba(255, 255, 255, 0.333);
+}
+
+.button {
+    background: #1e3c72;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-weight: 600;
+    margin-top: 12px;
+    width: 100%;
+
+}
+
+/* _____LOADING______ */
+.load-page {
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+
+/* ________TERMS_______ */
+.underline{
+    width: 40%;
+    background-color: #000428;
+    height: 2px;
+}
+.terms{
+    height: 100vh;
+}
+.terms-title{
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.terms-link{
+    color: rgba(255, 255, 255, 0.543);
+    text-decoration: underline;
+}
